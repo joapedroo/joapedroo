@@ -1,4 +1,3 @@
-### Hi there 👋
 ## Olá, me chamo João Pedro!
  <div>
   <a href="https://github.com/joapedroo">
