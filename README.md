@@ -49,11 +49,11 @@ public class Pessoa {
  <img align="center" alt="João-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
  <img align="center" alt="João-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
  <img align="center" alt="João-PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-plain.svg">
- <img align="right" alt="João-Madalorian" width="25%"  height="25%"src="https://www.icegif.com/wp-content/uploads/icegif-1301.gif">
+ <img align="right" alt="João-Madalorian" width="25%"  height="25%"src="https://c.tenor.com/rarynTvGJaUAAAAM/cicada3301-glitch.gif">
 </div>
  <h1></h1>
 <div style="display: inline_block border-style: solid}"><br>
-  <h2 style="color:red" ><b>♦ IDE | TOOL | ISO ♦ </b></h2>
+  <h2 style="color:red" ><b>♦ IDE | TOOL | SO ♦ </b></h2>
   <img align="center" alt="João-vscode" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg">
   <img align="center" alt="João-Docker" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
   <img align="center" alt="João-Debian" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg">
