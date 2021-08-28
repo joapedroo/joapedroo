@@ -32,8 +32,8 @@ public class Pessoa {
 <h1></h1>
   <h2><b>♦ STATISTICS ♦</b></h2>
   <a href="https://github.com/joapedroo">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=7&theme=github_dark"/>
+  <img height="130em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
+  <img height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=7&theme=github_dark"/>
 </div>
 <div style="display: inline_block"><br>
   <h2><b>♦ HARD SKILLS ♦</b></h2>
