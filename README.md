@@ -4,8 +4,8 @@ package Github;
 public class Apresentacao{   
     public static void main(String[] args)
     {
-        Pessoa joapedroo = new joapedroo("João Pedro",21,"Sistemas de Informação",true,true");
-        System.out.print("Seja bem vindo ao meu perfil ♥");
+        Pessoa joapedroo = new joapedroo("João Pedro",23,"Sistemas de Informação",true,true");
+        System.out.print("Seja bem vindo ao meu perfil!");
     }
 }
 
