@@ -1,13 +1,17 @@
 ```java
 package Github;
 
-public class Apresentacao{   
-    public static void main(String[] args)
-    {
-        Pessoa joapedroo = new joapedroo("João Pedro",23,"Sistemas de Informação",true,true");
-        System.out.print("Seja bem vindo ao meu perfil!");
+public class Apresentacao {
+    public static void main(String[] args) {
+        // Create an instance of Pessoa class
+        Pessoa joapedroo = new Pessoa("João Pedro", 23, "Sistemas de Informação");
+
+        // Print a welcome message
+        System.out.println("Seja bem vindo ao meu perfil!");
     }
 }
+
+
 
 ```
 ```java
@@ -15,19 +19,35 @@ package Github;
 
 public class Pessoa {
 
-    private String nome; 
-    private int idade; 
-    private String formacao; 
+    private String nome;
+    private int idade;
+    private String formacao;
     private boolean cursandoFacu;
     private boolean cursandoBoot;
-    
-    public Pessoa(String nome, int idade, String formacao)
-    {
-        getNome = this.nome;
-        getIdade = this.idade;
-        getFormacao = this.formacao;
-    {
+
+    // Constructor to initialize object with name, age, and education
+    public Pessoa(String nome, int idade, String formacao) {
+        this.nome = nome;       // Assign the parameter value to the instance variable
+        this.idade = idade;     // Assign the parameter value to the instance variable
+        this.formacao = formacao; // Assign the parameter value to the instance variable
+        this.cursandoFacu = false; // Default value
+        this.cursandoBoot = false; // Default value
+    }
+
+    // Getter methods for private fields
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getFormacao() {
+        return formacao;
+    }
 }
+
 ```
 <h1></h1>
   <h2><b>♦ STATISTICS ♦</b></h2>
