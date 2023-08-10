@@ -1,98 +1,113 @@
-```java
-package Github;
-
-public class Apresentacao {
-    public static void main(String[] args) {
-        // Create an instance of Pessoa class
-        Pessoa joapedroo = new Pessoa("João Pedro", 23, "Sistemas de Informação");
-
-        // Print a welcome message
-        System.out.println("Seja bem vindo ao meu perfil!");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Pedro's Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: white;
+      margin: 0;
+      padding: 0;
     }
-}
-
-
-
-```
-```java
-package Github;
-
-public class Pessoa {
-
-    private String nome;
-    private int idade;
-    private String formacao;
-    private boolean cursandoFacu;
-    private boolean cursandoBoot;
-
-    // Constructor to initialize object with name, age, and education
-    public Pessoa(String nome, int idade, String formacao) {
-        this.nome = nome;       // Assign the parameter value to the instance variable
-        this.idade = idade;     // Assign the parameter value to the instance variable
-        this.formacao = formacao; // Assign the parameter value to the instance variable
-        this.cursandoFacu = false; // Default value
-        this.cursandoBoot = false; // Default value
+    h1, h2 {
+      margin: 0;
+      padding: 10px;
+      font-weight: bold;
+      color: #FF5733;
     }
-
-    // Getter methods for private fields
-    public String getNome() {
-        return nome;
+    img {
+      max-width: 100%;
+      height: auto;
     }
-
-    public int getIdade() {
-        return idade;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
     }
-
-    public String getFormacao() {
-        return formacao;
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px #FF5733;
+      padding: 10px;
+      margin-top: 10px;
     }
-}
-
-```
-<h1></h1>
-  <h2><b>♦ STATISTICS ♦</b></h2>
-  <a href="https://github.com/joapedroo">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=7&theme=github_dark"/>
-</div>
-<div style="display: inline_block"><br>
-  <h2><b>♦ HARD SKILLS ♦</b></h2>
- <img align="center" alt="João-C" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
- <img align="center" alt="João-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
- <img align="center" alt="João-C++" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
- <img align="center" alt="João-Perl" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/perl/perl-original.svg">
- <img align="center" alt="João-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">     
- <img align="center" alt="João-Ruby" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-plain.svg">
- <img align="center" alt="João-Bash" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg">
- <img align="center" alt="João-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
- <img align="center" alt="João-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
- <img align="center" alt="João-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
- <img align="center" alt="João-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
- <img align="center" alt="João-PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-plain.svg">
- <img align="right" alt="João-Madalorian" width="25%"  height="25%"src="https://c.tenor.com/rarynTvGJaUAAAAM/cicada3301-glitch.gif">
-</div>
- <h1></h1>
-<div style="display: inline_block border-style: solid}"><br>
-  <h2 style="color:red" ><b>♦ IDE | TOOL | SO ♦ </b></h2>
-  <img align="center" alt="João-vscode" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg">
-  <img align="center" alt="João-Docker" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
-  <img align="center" alt="João-Debian" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg">
-  <img align="center" alt="João-Raspberrypi" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/raspberrypi/raspberrypi-original.svg">
-  <img align="center" alt="João-Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
- <table>
-  <img align="center" alt="João-Win" height="40" width="50" border="solid 1px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg">
-  </table>
-</div>
- <h1></h1>
- <div style="display: inline_block">
-  <a href="https://github.com/joapedroo/Ramsonware">
-  <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ramsonware&theme=github_dark"/>
-  <a href="https://github.com/joapedroo/Parsing-html">
-  <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark"/>
-</div>
- <h1><h1>
-<div> 
-  <a href="https://www.instagram.com/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/joapedroo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  
- ![Snake animation](https://github.com/joapedroo/joapedroo/blob/output/github-contribution-grid-snake.svg)
+    .skills img {
+      margin: 5px;
+    }
+    .project {
+      margin: 10px;
+    }
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social-links a {
+      margin: 10px;
+    }
+    .snake-animation {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>João Pedro</h1>
+      <h2><b>♦ STATISTICS ♦</b></h2>
+      <a href="https://github.com/joapedroo">
+        <img height="150" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+        <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=7&theme=github_dark" alt="Top Languages"/>
+      </a>
+    </div>
+    <div class="skills">
+      <h2><b>♦ HARD SKILLS ♦</b></h2>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/perl/perl-original.svg" alt="Perl">
+      <!-- Add other skills here -->
+    </div>
+    <div class="skills">
+      <!-- Add more skills here -->
+    </div>
+  </div>
+  <div class="container">
+    <div class="skills">
+      <!-- Add more skills here -->
+    </div>
+  </div>
+  <div class="container">
+    <div class="project">
+      <a href="https://github.com/joapedroo/Ramsonware">
+        <img height="100" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ramsonware&theme=github_dark" alt="Ramsonware Project"/>
+      </a>
+      <a href="https://github.com/joapedroo/Parsing-html">
+        <img height="100" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark" alt="Parsing HTML Project"/>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="social-links">
+      <a href="https://www.instagram.com/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/joapedroo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="snake-animation">
+      <img src="https://github.com/joapedroo/joapedroo/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation">
+    </div>
+  </div>
+</body>
+</html>
