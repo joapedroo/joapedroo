@@ -3,10 +3,8 @@ package Github;
 
 public class Apresentacao {
     public static void main(String[] args) {
-        // Create an instance of Pessoa class
         Pessoa joapedroo = new Pessoa("João Pedro", 23, "Sistemas de Informação");
 
-        // Print a welcome message
         System.out.println("Seja bem vindo ao meu perfil!");
     }
 }
@@ -27,11 +25,11 @@ public class Pessoa {
 
     // Constructor to initialize object with name, age, and education
     public Pessoa(String nome, int idade, String formacao) {
-        this.nome = nome;       // Assign the parameter value to the instance variable
-        this.idade = idade;     // Assign the parameter value to the instance variable
-        this.formacao = formacao; // Assign the parameter value to the instance variable
-        this.cursandoFacu = false; // Default value
-        this.cursandoBoot = false; // Default value
+        this.nome = nome;       
+        this.idade = idade;    
+        this.formacao = formacao; 
+        this.cursandoFacu = false; 
+        this.cursandoBoot = false; 
     }
 
     // Getter methods for private fields
