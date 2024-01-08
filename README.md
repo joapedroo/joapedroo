@@ -1,50 +1,36 @@
-```java
-package Github;
+```python
+class Pessoa:
+    def __init__(self, nome, idade, curso):
+        self.nome = nome
+        self.idade = idade
+        self.curso = curso
 
-public class Apresentacao {
-    public static void main(String[] args) {
-        Pessoa joapedroo = new Pessoa("João Pedro", 23, "Sistemas de Informação");
+joao_pedro = Pessoa("João Pedro", 23, "Segurança da informação")
 
-        System.out.println("Seja bem vindo ao meu perfil!");
-    }
-}
+print("Seja bem vindo ao meu perfil!")
+
 
 
 
 ```
-```java
-package Github;
+```python
+class Pessoa:
+    def __init__(self, nome, idade, formacao):
+        self.nome = nome
+        self.idade = idade
+        self.formacao = formacao
+        self.cursando_facu = False
+        self.cursando_boot = False
 
-public class Pessoa {
+    def get_nome(self):
+        return self.nome
 
-    private String nome;
-    private int idade;
-    private String formacao;
-    private boolean cursandoFacu;
-    private boolean cursandoBoot;
+    def get_idade(self):
+        return self.idade
 
-    // Constructor to initialize object with name, age, and education
-    public Pessoa(String nome, int idade, String formacao) {
-        this.nome = nome;       
-        this.idade = idade;    
-        this.formacao = formacao; 
-        this.cursandoFacu = false; 
-        this.cursandoBoot = false; 
-    }
+    def get_formacao(self):
+        return self.formacao
 
-    // Getter methods for private fields
-    public String getNome() {
-        return nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public String getFormacao() {
-        return formacao;
-    }
-}
 
 ```
 <h1></h1>
