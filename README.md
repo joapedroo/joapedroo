@@ -12,11 +12,6 @@ namespace HelloQSharp {
         WelcomeMessage();
     }
 }
-
-
-
-
-
 ```
 ```Q#
 namespace PessoaExample {
