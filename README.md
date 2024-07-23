@@ -1,35 +1,65 @@
-```python
-class Pessoa:
-    def __init__(self, nome, idade, curso):
-        self.nome = nome
-        self.idade = idade
-        self.curso = curso
+```Q#
+namespace HelloQSharp {
+    open Microsoft.Quantum.Intrinsic;
+    open Microsoft.Quantum.Canon;
 
-joao_pedro = Pessoa("João Pedro", 23, "Segurança da informação")
+    operation WelcomeMessage() : Unit {
+        Message("Seja bem vindo ao meu perfil!");
+    }
 
-print("Seja bem vindo ao meu perfil!")
+    @EntryPoint()
+    operation Main() : Unit {
+        WelcomeMessage();
+    }
+}
+
 
 
 
 
 ```
-```python
-class Pessoa:
-    def __init__(self, nome, idade, formacao):
-        self.nome = nome
-        self.idade = idade
-        self.formacao = formacao
-        self.cursando_facu = False
-        self.cursando_boot = False
+```Q#
+namespace PessoaExample {
+    open Microsoft.Quantum.Canon;
+    open Microsoft.Quantum.Intrinsic;
 
-    def get_nome(self):
-        return self.nome
+    newtype Pessoa = (Nome : String, Idade : Int, Formacao : String, CursandoFacu : Bool, CursandoBoot : Bool);
 
-    def get_idade(self):
-        return self.idade
+    operation GetNome(pessoa : Pessoa) : String {
+        body {
+            let (nome, _, _, _, _) = pessoa;
+            return nome;
+        }
+    }
 
-    def get_formacao(self):
-        return self.formacao
+    operation GetIdade(pessoa : Pessoa) : Int {
+        body {
+            let (_, idade, _, _, _) = pessoa;
+            return idade;
+        }
+    }
+
+    operation GetFormacao(pessoa : Pessoa) : String {
+        body {
+            let (_, _, formacao, _, _) = pessoa;
+            return formacao;
+        }
+    }
+
+    @EntryPoint()
+    operation Main() : Unit {
+        body {
+            // Criando uma instância de Pessoa
+            let pessoa = Pessoa("João", 30, "Engenharia", false, false);
+
+            // Usando as operações para obter informações
+            Message("Nome: " + GetNome(pessoa));
+            Message("Idade: " + IntAsString(GetIdade(pessoa)));
+            Message("Formacao: " + GetFormacao(pessoa));
+        }
+    }
+}
+
 
 
 ```
