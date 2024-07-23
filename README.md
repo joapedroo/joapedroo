@@ -50,7 +50,7 @@ namespace PessoaExample {
     operation Main() : Unit {
         body {
             // Criando uma instância de Pessoa
-            let pessoa = Pessoa("João", 30, "Engenharia", false, false);
+            let pessoa = Pessoa("João", 25, "Cyber Security", false, false);
 
             // Usando as operações para obter informações
             Message("Nome: " + GetNome(pessoa));
