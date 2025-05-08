@@ -1,56 +1,109 @@
-👋 Olá, eu sou João Pedro!
-🔭 Desenvolvedor Full Stack | Cybersecurity Enthusiast
-📊 Estatísticas do GitHub
-<div align="center"> <a href="https://github.com/joapedroo"> <img height="180em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=8&theme=github_dark"/> </a> </div>
-💻 Habilidades Técnicas
-🚀 Linguagens de Programação
-<div style="display: inline_block"> <img align="center" alt="C" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"> <img align="center" alt="C++" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"> <img align="center" alt="C#" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"> <img align="center" alt="Python" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"> <img align="center" alt="Go" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"> <img align="center" alt="JavaScript" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> <img align="center" alt="TypeScript" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"> <img align="center" alt="PHP" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"> </div>
-🌐 Front-end & Frameworks
-<div style="display: inline_block"> <img align="center" alt="React" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> <img align="center" alt="Next.js" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"> <img align="center" alt="Vue.js" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"> <img align="center" alt="HTML5" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img align="center" alt="CSS3" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> <img align="center" alt="Sass" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"> </div>
-🛠️ Ferramentas & Plataformas
-<div style="display: inline_block"> <img align="center" alt="Docker" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"> <img align="center" alt="Git" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"> <img align="center" alt="VS Code" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"> <img align="center" alt="Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"> <img align="center" alt="Debian" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg"> <img align="center" alt="Raspberry Pi" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/raspberrypi/raspberrypi-original.svg"> </div>
-🏆 Projetos em Destaque
-<div align="center"> <a href="https://github.com/joapedroo/Ransomware"> <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ransomware&theme=github_dark"/> </a> <a href="https://github.com/joapedroo/Parsing-html"> <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark"/> </a> </div>
-👨‍💻 Exemplo de Código em Go
-go
+```Q#
+namespace HelloQSharp {
+    open Microsoft.Quantum.Intrinsic;
+    open Microsoft.Quantum.Canon;
 
-package main
-
-import "fmt"
-
-type Person struct {
-    Name      string
-    Age       int
-    Education string
-    InCollege bool
-    InBootcamp bool
-}
-
-func main() {
-    // Criando uma instância de Person
-    person := Person{
-        Name:      "João",
-        Age:       25,
-        Education: "Cyber Security",
-        InCollege: false,
-        InBootcamp: false,
+    operation WelcomeMessage() : Unit {
+        Message("Seja bem vindo ao meu perfil!");
     }
 
-    // Acessando os campos da struct
-    fmt.Printf("Nome: %s\n", person.Name)
-    fmt.Printf("Idade: %d\n", person.Age)
-    fmt.Printf("Formação: %s\n", person.Education)
-    
-    if person.InCollege {
-        fmt.Println("Atualmente cursando faculdade")
-    } else {
-        fmt.Println("Não está cursando faculdade no momento")
+    @EntryPoint()
+    operation Main() : Unit {
+        WelcomeMessage();
+    }
+}
+```
+```Q#
+namespace PessoaExample {
+    open Microsoft.Quantum.Canon;
+    open Microsoft.Quantum.Intrinsic;
+
+    newtype Pessoa = (Nome : String, Idade : Int, Formacao : String, CursandoFacu : Bool, CursandoBoot : Bool);
+
+    operation GetNome(pessoa : Pessoa) : String {
+        body {
+            let (nome, _, _, _, _) = pessoa;
+            return nome;
+        }
+    }
+
+    operation GetIdade(pessoa : Pessoa) : Int {
+        body {
+            let (_, idade, _, _, _) = pessoa;
+            return idade;
+        }
+    }
+
+    operation GetFormacao(pessoa : Pessoa) : String {
+        body {
+            let (_, _, formacao, _, _) = pessoa;
+            return formacao;
+        }
+    }
+
+    @EntryPoint()
+    operation Main() : Unit {
+        body {
+            // Criando uma instância de Pessoa
+            let pessoa = Pessoa("João", 25, "Cyber Security", false, false);
+
+            // Usando as operações para obter informações
+            Message("Nome: " + GetNome(pessoa));
+            Message("Idade: " + IntAsString(GetIdade(pessoa)));
+            Message("Formacao: " + GetFormacao(pessoa));
+        }
     }
 }
 
-📫 Como me encontrar
-<div> <a href="https://www.linkedin.com/in/joapedroo/" target="_blank"> <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"> </a> <a href="mailto:seu-email@exemplo.com" target="_blank"> <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"> </a> </div>
 
-Snake animation
 
-⭐️ De joapedroo
+```
+<h1></h1>
+  <h2><b>♦ STATISTICS ♦</b></h2>
+  <a href="https://github.com/joapedroo">
+  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
+  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=7&theme=github_dark"/>
+</div>
+<div style="display: inline_block"><br>
+  <h2><b>♦ HARD SKILLS ♦</b></h2>
+  <img align="center" alt="João-C" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
+  <img align="center" alt="João-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+  <img align="center" alt="João-C++" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
+  <img align="center" alt="João-Perl" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/perl/perl-original.svg">
+  <img align="center" alt="João-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">     
+  <img align="center" alt="João-Bash" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg">
+  <img align="center" alt="João-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="João-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="João-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+  <img align="center" alt="João-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="João-Node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+  <img align="center" alt="João-Next" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg">
+  <img align="center" alt="João-Vue" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg">
+  <img align="center" alt="João-PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-plain.svg">
+  <img align="right" alt="João-Madalorian" width="25%" height="25%" src="https://c.tenor.com/rarynTvGJaUAAAAM/cicada3301-glitch.gif">
+</div>
+ <h1></h1>
+<div style="display: inline_block border-style: solid}"><br>
+  <h2 style="color:red" ><b>♦ IDE | TOOL | SO ♦ </b></h2>
+  <img align="center" alt="João-vscode" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg">
+  <img align="center" alt="João-Docker" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+  <img align="center" alt="João-Debian" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg">
+  <img align="center" alt="João-Raspberrypi" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/raspberrypi/raspberrypi-original.svg">
+  <img align="center" alt="João-Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+ <table>
+  <img align="center" alt="João-Win" height="40" width="50" border="solid 1px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg">
+  </table>
+</div>
+ <h1></h1>
+ <div style="display: inline_block">
+  <a href="https://github.com/joapedroo/Ramsonware">
+  <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ramsonware&theme=github_dark"/>
+  <a href="https://github.com/joapedroo/Parsing-html">
+  <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark"/>
+</div>
+ <h1><h1>
+<div> 
+  <a href="https://www.instagram.com/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/joapedroo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  
+ ![Snake animation](https://github.com/joapedroo/joapedroo/blob/output/github-contribution-grid-snake.svg)
