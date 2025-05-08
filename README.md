@@ -1,67 +1,56 @@
-# João Pedro - Desenvolvedor Full Stack
+👋 Olá, eu sou João Pedro!
+🔭 Desenvolvedor Full Stack | Cybersecurity Enthusiast
+📊 Estatísticas do GitHub
+<div align="center"> <a href="https://github.com/joapedroo"> <img height="180em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=8&theme=github_dark"/> </a> </div>
+💻 Habilidades Técnicas
+🚀 Linguagens de Programação
+<div style="display: inline_block"> <img align="center" alt="C" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"> <img align="center" alt="C++" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"> <img align="center" alt="C#" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"> <img align="center" alt="Python" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"> <img align="center" alt="Go" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"> <img align="center" alt="JavaScript" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> <img align="center" alt="TypeScript" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"> <img align="center" alt="PHP" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"> </div>
+🌐 Front-end & Frameworks
+<div style="display: inline_block"> <img align="center" alt="React" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> <img align="center" alt="Next.js" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"> <img align="center" alt="Vue.js" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"> <img align="center" alt="HTML5" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img align="center" alt="CSS3" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> <img align="center" alt="Sass" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"> </div>
+🛠️ Ferramentas & Plataformas
+<div style="display: inline_block"> <img align="center" alt="Docker" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"> <img align="center" alt="Git" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"> <img align="center" alt="VS Code" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"> <img align="center" alt="Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"> <img align="center" alt="Debian" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg"> <img align="center" alt="Raspberry Pi" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/raspberrypi/raspberrypi-original.svg"> </div>
+🏆 Projetos em Destaque
+<div align="center"> <a href="https://github.com/joapedroo/Ransomware"> <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ransomware&theme=github_dark"/> </a> <a href="https://github.com/joapedroo/Parsing-html"> <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark"/> </a> </div>
+👨‍💻 Exemplo de Código em Go
+go
 
-<div align="center">
-  <img src="https://c.tenor.com/rarynTvGJaUAAAAM/cicada3301-glitch.gif" width="25%">
-</div>
+package main
 
-## 👨‍💻 Sobre Mim
+import "fmt"
 
-Desenvolvedor full stack com experiência em diversas tecnologias front-end e back-end. Apaixonado por criar soluções inovadoras e eficientes para problemas complexos.
+type Person struct {
+    Name      string
+    Age       int
+    Education string
+    InCollege bool
+    InBootcamp bool
+}
 
-## 🛠 Habilidades Técnicas
+func main() {
+    // Criando uma instância de Person
+    person := Person{
+        Name:      "João",
+        Age:       25,
+        Education: "Cyber Security",
+        InCollege: false,
+        InBootcamp: false,
+    }
 
-### Linguagens de Programação
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Perl](https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white)
+    // Acessando os campos da struct
+    fmt.Printf("Nome: %s\n", person.Name)
+    fmt.Printf("Idade: %d\n", person.Age)
+    fmt.Printf("Formação: %s\n", person.Education)
+    
+    if person.InCollege {
+        fmt.Println("Atualmente cursando faculdade")
+    } else {
+        fmt.Println("Não está cursando faculdade no momento")
+    }
+}
 
-### Front-end
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+📫 Como me encontrar
+<div> <a href="https://www.linkedin.com/in/joapedroo/" target="_blank"> <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"> </a> <a href="mailto:seu-email@exemplo.com" target="_blank"> <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"> </a> </div>
 
-### Back-end & Bancos de Dados
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+Snake animation
 
-### Ferramentas & Plataformas
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberry-pi&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-
-## 📊 Estatísticas do GitHub
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=8&theme=github_dark"/>
-</div>
-
-## 🏆 Projetos Destacados
-
-<div align="center">
-  <a href="https://github.com/joapedroo/Ramsonware">
-    <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ramsonware&theme=github_dark"/>
-  </a>
-  <a href="https://github.com/joapedroo/Parsing-html">
-    <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark"/>
-  </a>
-</div>
-
-## 📫 Como me encontrar
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joapedroo/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/)
-
-<div align="center">
-  <img src="https://github.com/joapedroo/joapedroo/blob/output/github-contribution-grid-snake.svg">
-</div>
+⭐️ De joapedroo
