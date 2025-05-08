@@ -1,109 +1,67 @@
-```Q#
-namespace HelloQSharp {
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Canon;
+# João Pedro - Desenvolvedor Full Stack
 
-    operation WelcomeMessage() : Unit {
-        Message("Seja bem vindo ao meu perfil!");
-    }
-
-    @EntryPoint()
-    operation Main() : Unit {
-        WelcomeMessage();
-    }
-}
-```
-```Q#
-namespace PessoaExample {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-
-    newtype Pessoa = (Nome : String, Idade : Int, Formacao : String, CursandoFacu : Bool, CursandoBoot : Bool);
-
-    operation GetNome(pessoa : Pessoa) : String {
-        body {
-            let (nome, _, _, _, _) = pessoa;
-            return nome;
-        }
-    }
-
-    operation GetIdade(pessoa : Pessoa) : Int {
-        body {
-            let (_, idade, _, _, _) = pessoa;
-            return idade;
-        }
-    }
-
-    operation GetFormacao(pessoa : Pessoa) : String {
-        body {
-            let (_, _, formacao, _, _) = pessoa;
-            return formacao;
-        }
-    }
-
-    @EntryPoint()
-    operation Main() : Unit {
-        body {
-            // Criando uma instância de Pessoa
-            let pessoa = Pessoa("João", 25, "Cyber Security", false, false);
-
-            // Usando as operações para obter informações
-            Message("Nome: " + GetNome(pessoa));
-            Message("Idade: " + IntAsString(GetIdade(pessoa)));
-            Message("Formacao: " + GetFormacao(pessoa));
-        }
-    }
-}
-
-
-
-```
-<h1></h1>
-  <h2><b>♦ STATISTICS ♦</b></h2>
-  <a href="https://github.com/joapedroo">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=7&theme=github_dark"/>
+<div align="center">
+  <img src="https://c.tenor.com/rarynTvGJaUAAAAM/cicada3301-glitch.gif" width="25%">
 </div>
-<div style="display: inline_block"><br>
-  <h2><b>♦ HARD SKILLS ♦</b></h2>
-  <img align="center" alt="João-C" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
-  <img align="center" alt="João-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
-  <img align="center" alt="João-C++" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
-  <img align="center" alt="João-Perl" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/perl/perl-original.svg">
-  <img align="center" alt="João-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">     
-  <img align="center" alt="João-Bash" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg">
-  <img align="center" alt="João-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="João-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="João-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
-  <img align="center" alt="João-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-  <img align="center" alt="João-Node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
-  <img align="center" alt="João-Next" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg">
-  <img align="center" alt="João-Vue" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg">
-  <img align="center" alt="João-PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-plain.svg">
-  <img align="right" alt="João-Madalorian" width="25%" height="25%" src="https://c.tenor.com/rarynTvGJaUAAAAM/cicada3301-glitch.gif">
+
+## 👨‍💻 Sobre Mim
+
+Desenvolvedor full stack com experiência em diversas tecnologias front-end e back-end. Apaixonado por criar soluções inovadoras e eficientes para problemas complexos.
+
+## 🛠 Habilidades Técnicas
+
+### Linguagens de Programação
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Perl](https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white)
+
+### Front-end
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Back-end & Bancos de Dados
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+### Ferramentas & Plataformas
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberry-pi&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+
+## 📊 Estatísticas do GitHub
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=joapedroo&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joapedroo&layout=compact&langs_count=8&theme=github_dark"/>
 </div>
- <h1></h1>
-<div style="display: inline_block border-style: solid}"><br>
-  <h2 style="color:red" ><b>♦ IDE | TOOL | SO ♦ </b></h2>
-  <img align="center" alt="João-vscode" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg">
-  <img align="center" alt="João-Docker" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
-  <img align="center" alt="João-Debian" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg">
-  <img align="center" alt="João-Raspberrypi" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/raspberrypi/raspberrypi-original.svg">
-  <img align="center" alt="João-Linux" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
- <table>
-  <img align="center" alt="João-Win" height="40" width="50" border="solid 1px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg">
-  </table>
-</div>
- <h1></h1>
- <div style="display: inline_block">
+
+## 🏆 Projetos Destacados
+
+<div align="center">
   <a href="https://github.com/joapedroo/Ramsonware">
-  <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ramsonware&theme=github_dark"/>
+    <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Ramsonware&theme=github_dark"/>
+  </a>
   <a href="https://github.com/joapedroo/Parsing-html">
-  <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark"/>
+    <img height="120em" src="https://github-readme-stats.vercel.app/api/pin/?username=joapedroo&repo=Parsing-html&theme=github_dark"/>
+  </a>
 </div>
- <h1><h1>
-<div> 
-  <a href="https://www.instagram.com/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/joapedroo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  
- ![Snake animation](https://github.com/joapedroo/joapedroo/blob/output/github-contribution-grid-snake.svg)
+
+## 📫 Como me encontrar
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joapedroo/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/)
+
+<div align="center">
+  <img src="https://github.com/joapedroo/joapedroo/blob/output/github-contribution-grid-snake.svg">
+</div>
